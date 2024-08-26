@@ -14,9 +14,9 @@
 6. [Contributing](#contributing)
 
 ## Deployment Link
-- [Click here to play the game](#) *https://devendrakumarsahu-21bhi10078.onrender.com*
+- Click here to play the game:  *https://devendrakumarsahu-21bhi10078.onrender.com*
 
-## How to Play the Game
+## How to Play the Game?
 
 ### Overview
 This is a turn-based chess-like game where players can select their pieces and move them strategically on a 5x5 grid. The goal is to outmaneuver your opponent and win the game by following the movement rules of different pieces.
