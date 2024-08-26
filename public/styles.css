@@ -214,6 +214,10 @@ body {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+#acknowledgment{
+    margin: 20px 50px 50px 50px;
+}
+
 /* Footer styling */
 footer {
     background-color: #e0e7ff; /* Light blue background for footer */
