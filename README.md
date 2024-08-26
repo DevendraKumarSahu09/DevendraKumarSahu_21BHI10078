@@ -81,3 +81,6 @@ This will load the game interface where you can start playing.
 
 ### Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. 
+
+##  Acknowledgments
+A big thank you to Hitwicket for giving us the chance to work on this project. Hitwicket is a tech startup based in Hyderabad, known for its innovative games and creative spirit. Their challenge helped us create a fun and engaging game.
