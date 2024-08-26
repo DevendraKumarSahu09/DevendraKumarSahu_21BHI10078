@@ -1,16 +1,20 @@
 # Turn-based Chess-like Game
 
 ## Table of Contents
-1. [How to Play the Game](#how-to-play-the-game)
+1. [Deployment Link](#deployment-link)
+2. [How to Play the Game](#how-to-play-the-game)
    - [Overview](#overview)
    - [Screenshots](#screenshots)
-2. [How to Run This Repo on Your Computer](#how-to-run-this-repo-on-your-computer)
+3. [How to Run This Repo on Your Computer](#how-to-run-this-repo-on-your-computer)
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
    - [Running the Application](#running-the-application)
-   - [Testing](#testing)
-3. [Contributing](#contributing)
-4. [License](#license)
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+6. [Contributing](#contributing)
+
+## Deployment Link
+- [Click here to play the game](#) *https://devendrakumarsahu-21bhi10078.onrender.com*
 
 ## How to Play the Game
 
@@ -24,13 +28,14 @@ This is a turn-based chess-like game where players can select their pieces and m
 - **Hero3 (H3):** Moves up to 3 steps in any direction.
 
 ### Screenshots
-*Add some screenshots of your game here to illustrate how it looks and how to play.*
+*Open the deployment link or local host link in two tabs (or on two different devices): one for Player A and another for Player B.*
 
-![Game Screenshot 1](path/to/screenshot1.png)
-*Caption for Screenshot 1*
+![image](https://github.com/user-attachments/assets/e161c2a2-7b06-4344-808c-4391748b1fd0)
+![p22](https://github.com/user-attachments/assets/ab73a1e4-447c-4ce2-a1ce-81d041336619)
 
-![Game Screenshot 2](path/to/screenshot2.png)
-*Caption for Screenshot 2*
+*Move history also available*
+![image](https://github.com/user-attachments/assets/699a23e3-ec95-4ace-b32a-65ab2643cf38)
+
 
 ## How to Run This Repo on Your Computer
 
@@ -42,11 +47,11 @@ Before running the application, make sure you have the following installed:
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   https://github.com/DevendraKumarSahu09/DevendraKumarSahu_21BHI10078.git
    
 2. **Navigate to the project directory:**
     ```bash
-    cd your-repo-name
+    cd DevendraKumarSahu_21BHI10078
 
 3. **Install dependencies:**
     ```bash
@@ -62,6 +67,17 @@ Before running the application, make sure you have the following installed:
     http://localhost:3000
 
 This will load the game interface where you can start playing.
+
+## Features
+- **Multi-player Support:** Play with another player in real-time.
+- **Interactive UI:** Intuitive and easy-to-use game board and controls.
+- **Piece Movement Guide:** Clear instructions on how each piece moves.
+- **Move History:** Track the sequence of moves made during the game.
+
+## Technologies Used
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Socket.io
+- **Deployment:** Render
 
 ### Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. 
