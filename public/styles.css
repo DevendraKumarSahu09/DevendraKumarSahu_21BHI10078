@@ -1,0 +1,241 @@
+/* Overall page styling */
+
+/* Google Font - Chakra Petch */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Chakra Petch, sans-serif; /* Sets the font style */
+    background-color: #f0f0f5; /* Light grey background */
+    color: #333333; /* Darker text color for better contrast */
+    min-height: 100vh; /* Ensures the body covers the full viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+/* Header styling */
+#header {
+    background-color: #e0e7ff; /* Light blue background for header */
+    color: #1b3572; /* Dark text color for better contrast */
+    width: 100%; /* Full width header */
+    text-align: center; /* Center text alignment */
+    padding: 20px 0; /* Padding on top and bottom */
+    border-bottom: 1px solid #d1d1d1; /* Adds a bottom border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow under header */
+}
+
+#header h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 2.5em; /* Large font size for the main title */
+    font-weight: bold; /* Bold font weight */
+}
+
+#header h3 {
+    margin: 5px 0 0 0; /* Adds a small top margin, no margin on sides or bottom */
+    font-size: 1.1em; /* Smaller font size for subtitle */
+    font-weight: normal; /* Normal font weight */
+    color: #555555; /* Slightly lighter color for the subtitle */
+}
+
+.imgg {
+    width: 200px; /* Fixed width for images */
+}
+
+/* Game container styling */
+#game-container {
+    text-align: center; /* Center text alignment */
+    max-width: 800px; /* Maximum width of container */
+    width: 100%; /* Full width */
+    margin: 50px; /* Margin around the container */
+}
+
+/* Game board styling */
+#game-board {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(5, 60px); /* Creates a 5-column grid, each column 60px wide */
+    grid-gap: 2px; /* Gap between grid items */
+    margin: 20px; /* Margin around the board */
+    background-color: #e0e7ff; /* Soft blue background for board */
+    padding: 5px; /* Padding inside the board */
+    border-radius: 10px; /* Rounded corners for the board */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Individual cell styling */
+.cell {
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    background-color: #f8f9fa; /* Light background for cells */
+    display: flex; /* Flex layout to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners for cells */
+    border: 1px solid #d1d1d1; /* Subtle border */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+.cell:hover {
+    background-color: #cce5ff; /* Light blue background on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Styling for selected cell */
+.cell.selected {
+    background-color: #007bff; /* Bright blue background for selected cell */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Styling for pieces of player A */
+.piece-A {
+    color: #ff6b6b; /* Bright coral color for player A's pieces */
+}
+
+/* Styling for pieces of player B */
+.piece-B {
+    color: #28a745; /* Bright green for player B's pieces */
+}
+
+/* Move buttons styling */
+#move-buttons {
+    display: grid; /* Grid layout for buttons */
+    grid-template-columns: repeat(4, 1fr); /* 4 equally-sized columns */
+    gap: 5px; /* Gap between buttons */
+    margin-top: 10px; /* Margin above buttons */
+}
+
+#move-buttons button {
+    padding: 5px 10px; /* Padding inside buttons */
+    background-color: #e9ecef; /* Light background color for buttons */
+    color: #495057; /* Darker text color */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition effect on hover */
+}
+
+#move-buttons button:hover {
+    background-color: #adb5bd; /* Darker background on hover */
+}
+
+/* Piece guide and move history styling */
+#piece-guide, #move-history {
+    margin-top: 20px; /* Margin above guides */
+    text-align: left; /* Align text to the left */
+}
+
+/* Move history list styling */
+#history-list {
+    list-style-type: none; /* Removes default list style */
+    padding: 0; /* Removes default padding */
+    max-height: 200px; /* Limits the height */
+    overflow-y: auto; /* Adds scrollbar if content overflows vertically */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #d1d1d1; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the list */
+}
+
+/* Game status styling */
+#game-status {
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 10px; /* Margin below status */
+    color: #333333; /* Darker color for game status */
+}
+
+/* Player selection styling */
+#player-selection {
+    margin-bottom: 20px; /* Margin below player selection */
+}
+
+#player-selection button {
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 16px; /* Larger font size */
+    margin: 0 10px; /* Margin on left and right */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    background-color: #ffffff; /* White background for player buttons */
+    color: #333333; /* Darker text color */
+    border: 1px solid #ced4da; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition effect on hover */
+}
+
+#player-selection button:hover {
+    background-color: #f1f1f1; /* Slightly darker on hover */
+}
+
+/* Styling for selected piece display */
+#selected-piece {
+    margin-bottom: 10px; /* Margin below the selected piece display */
+    font-weight: bold; /* Bold font weight */
+    color: #007bff; /* Bright blue color for highlighted selected piece */
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position on screen */
+    z-index: 1; /* Sits above all other content */
+    left: 0; /* Aligns to the left */
+    top: 0; /* Aligns to the top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Adds scrollbar if content overflows */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #ffffff; /* White background for modal */
+    margin: 15% auto; /* Centers the modal vertically and horizontally */
+    padding: 20px; /* Padding inside modal */
+    border: 1px solid #888; /* Subtle border */
+    width: 80%; /* Width of modal */
+    max-width: 400px; /* Maximum width of modal */
+    text-align: center; /* Center text alignment */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* New game button styling */
+#new-game-button {
+    margin-top: 20px; /* Margin above button */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    background-color: #007bff; /* Bright blue button */
+    color: #ffffff; /* White text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition effect on hover */
+}
+
+#new-game-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #e0e7ff; /* Light blue background for footer */
+    color: #1b3572; /* Dark text color */
+    font-size: 14px; /* Smaller font size */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text alignment */
+    padding: 10px 0; /* Padding on top and bottom */
+    position: fixed; /* Fixed position at bottom */
+    bottom: 0; /* Aligns to the bottom */
+    left: 0; /* Aligns to the left */
+    border-top: 1px solid #d1d1d1; /* Top border */
+}
+
+/* Flex container styling */
+.forFlex {
+    display: flex; /* Flex layout */
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: space-evenly; /* Even spacing between items */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0; /* Removes default margin */
+}
